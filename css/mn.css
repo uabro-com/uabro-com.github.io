@@ -15,8 +15,9 @@ html {
 
 body {
     margin: 0;
-    background: linear-gradient(135deg, #d7b9ff, #303e5d);
+    background: radial-gradient(#765a9a, #1b2a4c);
     background-color: #607D8B;
+    background-attachment: fixed;
     min-height: 100%;
     padding-bottom: 100px;
     box-sizing: border-box;
@@ -97,12 +98,11 @@ p {
 }
 
 .doc {
-    padding: 15px 15px 25px;
-    box-shadow: 2px 2px 6px silver;
-    margin-top: 35px;
+    padding: 50px 25px 50px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    margin: 100px auto;
     max-width: 770px;
-    margin-left: auto;
-    margin-right: auto;
     background: white;
 }
 
@@ -396,4 +396,10 @@ p {
 .content {
     color: white;
     text-shadow: 1px 1px 2px #333333;
+}
+
+.doc p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1em;
 }
