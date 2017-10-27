@@ -1,0 +1,334 @@
+*{
+font-family: Roboto, Segoe UI, sans-serif;
+color: #333;
+font-size: 18px;
+line-height: 1.4;
+}
+::selection{
+	background-color: #4a3262;
+	color: white;
+}
+#signin{
+background: #507CBE;
+padding: 10px 25px;
+}
+#logoutb{
+background: rgb(70, 70, 70);
+}
+body{
+    margin: 0;
+    background: #e0e0e0;
+    min-height: 100%;
+    padding-bottom: 100px;
+}
+body::-webkit-scrollbar {
+width: 8px;
+}
+body::-webkit-scrollbar-track {
+background-color: #E7E7E7;
+}
+body::-webkit-scrollbar-thumb {
+background-color: #31B2E6;
+}
+h1{
+text-align: center;
+font-size: 26px;
+}
+h2{
+text-align: center;
+font-size: 22px;
+}
+h3{
+text-align: center;
+font-size: 19px;
+font-weight: 500;
+}
+li{
+text-indent: 10px;
+line-height: 1.6;
+}
+p{
+line-height: 1.6;
+}
+.body{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px 120px;
+    background: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27058823529411763);
+}
+.b{
+    padding: 5px 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    display: inline-block;
+    background: rgb(237, 61, 61);
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    margin: 10px;
+    text-decoration: none;
+}
+.b:hover{
+    box-shadow: 0 0 9px 4px gainsboro;
+}
+.b:active{
+    box-shadow: 0 0 10px rgb(50, 50, 50) inset;
+}
+.b:focus{
+    outline: none;
+}
+.center{
+    text-align: center;
+}
+.doc{
+    padding: 15px 15px 25px;
+    box-shadow: 2px 2px 6px silver;
+    margin-top: 35px;
+    max-width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+}
+.follow_btn{
+	background-image: url(/img/g_and_f_btn.png);
+	background-size: 32px;
+	background-position: 0px 0px;
+	border-radius: 50%;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 0 5px -8px;
+	transition: .15s;
+	vertical-align: middle;
+}
+.follow_btn:hover{
+    box-shadow: 0 0 10px #808080;
+    transform: scale(1.1);
+}
+.google_btn{
+    background-color: #dd4b39;
+    background-position: 0 32px;
+}
+.facebook_btn{
+    background-color: #507CBE;
+}
+.mexy_btn{
+    background-color: white;
+    background-image: url(/img/app/mexy.pro/card.png);
+    padding: 4px;
+    background-position: 4px;
+    background-repeat: no-repeat;
+}
+.fb_picture{
+    background-size: 80px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-color: rgb(210, 213, 218);
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin: 5px 0 0;
+    display: inline-block;
+    transition: .3s;
+}
+.fb_picture:hover{
+    border-radius: 0;
+}
+.fb_div{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    height: 100px;
+}
+.head{
+	background: white;
+	text-align: center;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	box-shadow: 0px 1px 10px rgba(99, 99, 99, 0.43);
+}
+.inlb{
+    display: inline-block;
+}
+.inp{
+    border: 1px solid saddlebrown;
+    padding: 2px;
+}
+.inp:focus{
+    outline: 2px solid rgb(0, 167, 255);
+}
+.logo{
+	color: rgb(80, 80, 80);
+    background: url(/img/logo.svg) transparent;
+    background-position: 0px -10px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 15px 15px 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.12s;
+    width: 192px;
+    height: 100px;
+    vertical-align: middle;
+}
+.logo:hover {
+    background-color: #4f4f4f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4588235294117647);
+    transform: translateY(-4px);
+}
+.logo:hover div{
+color: white;
+}
+.logo>div{
+    font-family: Corbel,Roboto,Segoe UI,sans-serif;
+    position: absolute;
+    top: 75px;
+    left: 55px;
+    font-size: 14px;
+}
+.logo>.name{
+font-size: 30px;
+top: 28.5px;
+left: 75px;
+}
+.link{
+    color: #0780e7;
+    border-bottom: 1px solid #68375a;
+    padding: 5px 10px 0px;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: .12s;
+}
+.link:hover{
+    background-color: #EAEAEA;
+    color: #303747;
+    border-color: #a9448c;
+}
+.link:active{
+color: #DEE4F1;
+border-color: #182934;
+background-color: #1E71A6;
+}
+.menu{
+    font-size: 0;
+    line-height: 40px;
+    padding-left: 9px;
+    margin-top: 10px;
+}
+.menua{
+	color: #28303D;
+    background-color: transparent;
+    padding: 6px 10px;
+    text-decoration: none;
+    vertical-align: bottom;
+    transition: .12s;
+    display: inline-block;
+    width: 13%;
+    min-width: 100px;
+}
+.menua:hover{
+    background-color: #ececec;
+}
+.ahere{
+    color: #3b4363;
+    font-weight: bold;
+    border-bottom: 2px solid;
+}
+.noevents{
+pointer-events: none;
+}
+.white{
+	background-color: white !important;
+}
+.github_link{
+    font-size: 16px;
+    transition: .15s;
+    padding: 10px 5px 5px 10px;
+    display: inline-block;
+    border-radius: 3px;
+}
+.github_link>svg{
+    margin: -3px 5px 0 10px;
+    vertical-align: top;
+    fill: #333;
+    transition: .15s;
+}
+.github_link:hover{
+    color: #1b669b;
+    background: #f3f3f3;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+.github_link:hover > svg{
+    fill: #1b669b;
+}
+.foot-dev-stuff{
+    margin: 50px auto 10px;
+}
+
+.card{
+    width: 400px;
+    padding: 10px;
+    margin: 25px;
+    border: 1px solid #E2E2E2;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: left;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    background: white;
+    position: relative;
+}
+.card:hover .cardname{
+    text-decoration: underline;
+}
+.card:hover{
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.24);
+}
+.card:hover .cardname{
+    color: black;
+}
+.carddescription{
+    font-size: 16px;
+    font-style: italic;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    max-width: 180px;
+    text-align: right;
+    color: #93a0c5;
+}
+.cardimg{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 4px;
+}
+.cardname{
+    color: #6F6F6F;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+
+@media all and (max-width: 400px){
+	.line_logo {top:0 !important;}
+}
+
+.loading{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    background: rgba(0, 0, 0, 0.52);
+    transition: .5s;
+}
+.hide_loading{
+    opacity: 0;
+}

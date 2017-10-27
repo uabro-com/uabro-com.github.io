@@ -1,1 +1,184 @@
-200
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    <meta property="fb:admins" content="100003061527913"/>
+    <meta property="og:image" content="http://uabro.com/img/website.png"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="UABRO"/>
+    <meta property="og:description" name="description"
+          content="UABRO is a global community for developing science and technologies.">
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <title>UABRO organization</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/mn.css">
+</head>
+<body>
+<div class="head" style="padding-bottom: 50px;">
+    <div style="font-size:0;">
+        <div style="margin-bottom:15px;">
+            <a href="https://mexy.pro/" class="follow_btn mexy_btn"></a>
+        </div>
+        <a href="https://www.facebook.com/uabro.global" class="follow_btn facebook_btn"></a>
+        <a href="/" class="logo">
+            <div class="name">UABRO</div>
+            <div>only excellence</div>
+        </a>
+        <a href="https://plus.google.com/+uabro_global/posts" class="follow_btn google_btn"></a>
+    </div>
+    <!--<div class="menu">-->
+        <!--<a href="/" class="menua">Products</a>-->
+        <!--<a href="/statute" class="menua">Statute</a>-->
+        <!--<a href="/manifesto" class="menua">Manifesto</a>-->
+        <!--<a href="/vision" class="menua">Vision</a>-->
+        <!--<a href="/connect" class="menua">Connect</a>-->
+    <!--</div>-->
+</div>
+<div class="center">
+    <div style="margin:50px 0;">
+        <h1>Welcome to UABRO!</h1>
+        <p style="line-height:2;">Global community for scientists, engineers, designers and developers.</p>
+    </div>
+    <div class="center" style="display: none;">
+        <a class="card" href="/clock">
+            <img class="cardimg" src="/img/app/clock/card.png" alt="global clock, universal time">
+            <span class="cardname">Global time</span>
+            <span class="carddescription">Synchronized and accurate current time</span>
+        </a>
+        <a class="card" href="https://mexy.pro/">
+            <img class="cardimg" src="/img/app/mexy.pro/card.png" alt="MEXY.PRO system, https://mexy.pro">
+            <span class="cardname">MEXY.PRO network</span>
+            <span class="carddescription">Open source social network</span>
+        </a>
+        <a class="card" href="https://temp.mexy.pro/">
+            <img class="cardimg" src="/img/app/temp.mexy/card.png" alt="temp.mexy, https://temp.mexy.pro">
+            <span class="cardname">temp.mexy.pro</span>
+            <span class="carddescription">Secure, identity-less fast messenger</span>
+        </a>
+        <a class="card" href="https://jarvis.uabro.com/">
+            <img class="cardimg" src="/img/app/jarvis/card.png" alt="Jarvis AI system, https://jarvis.uabro.com">
+            <span class="cardname">Jarvis AI</span>
+            <span class="carddescription">Artificial intelligence system</span>
+        </a>
+        <a class="card" href="https://ideas.uabro.com/">
+            <img class="cardimg" src="/img/app/ideas/card.png" alt="Ideas UABRO project, https://ideas.uabro.com">
+            <span class="cardname">Ideas UABRO</span>
+            <span class="carddescription">Mind organizer</span>
+        </a>
+    </div>
+    <p style="color:silver;font-size:16px;">*stay tuned for more apps</p>
+</div>
+<script>
+    (function () {
+        "remove" in Element.prototype || (Element.prototype.remove = function () {
+            this.parentNode && this.parentNode.removeChild(this)
+        });
+        var q = function () {
+            var r = 0, c = document.createElement("canvas");
+            c.setAttribute("class", "loading");
+            document.body.appendChild(c);
+            var a = c.getContext("2d"), e = function (a, c) {
+                return Math.floor(Math.random() * (c - a + 1)) + a
+            }, t = function (a, c) {
+                return {
+                    x: e(a / 15, a),
+                    y: e(0, c / 3),
+                    n: e(2, 4),
+                    s: e(1, 4),
+                    sp: e(1, 20),
+                    dur: e(30, 150),
+                    step: 0,
+                    len: e(c / 15, c / 2)
+                }
+            }, u = 1, m = [], v = Math.PI / 180 * 71, w = Math.PI / 180 * -71;
+            return {
+                start: function () {
+                    var e =
+                            window.innerWidth, l = window.innerHeight, g = window.devicePixelRatio || 1,
+                        b = a.webkitBackingStorePixelRatio || a.mozBackingStorePixelRatio || a.msBackingStorePixelRatio || a.oBackingStorePixelRatio || a.backingStorePixelRatio || 1,
+                        f = g / b;
+                    g !== b ? (c.width = e * f, c.height = l * f, c.style.width = e + "px", c.style.height = l + "px", a.scale(f, f)) : (c.width = e, c.height = l);
+                    if (!m.length) for (g = 0; 37 > g; g++) m[g] = t(e, l);
+                    for (g = 0; g < m.length; g++) {
+                        b = m[g];
+                        b.step++;
+                        b.step >= b.dur && (b = m[g] = t(e, l));
+                        b.x -= b.sp * Math.cos(v);
+                        b.y += b.sp * Math.sin(v);
+                        var d = b, b = d.x,
+                            f = d.y, h, x = d.n, n = d.s, y = d.s / 2, p;
+                        p = 1 - Math.abs(d.step - d.dur / 2) / d.dur * 2;
+                        var k = Math.PI / 2 * 3, z = Math.PI / x;
+                        a.beginPath();
+                        a.moveTo(b, f);
+                        h = b + Math.cos(w) * d.len;
+                        d = f + Math.sin(w) * d.len;
+                        a.lineTo(h, d);
+                        h = a.createLinearGradient(b, f, h, d);
+                        h.addColorStop("0", "rgba(255,255,255," + p + ")");
+                        h.addColorStop("1.0", "rgba(255,255,255,0)");
+                        a.strokeStyle = h;
+                        a.lineWidth = n;
+                        a.stroke();
+                        a.beginPath();
+                        a.moveTo(b, f - n);
+                        for (var A = 0; A < x; A++) h = b + Math.cos(k) * n, d = f + Math.sin(k) * n, a.lineTo(h, d), k += z, h = b + Math.cos(k) * y, d = f + Math.sin(k) * y, a.lineTo(h, d),
+                            k += z;
+                        a.lineTo(b, f - n);
+                        a.closePath();
+                        a.lineWidth = 3;
+                        a.strokeStyle = "rgba(255,255,255," + p + ")";
+                        a.stroke();
+                        a.fillStyle = "rgba(255,255,255," + p + ")";
+                        a.fill()
+                    }
+                    r++;
+                    105 < r && q.stop();
+                    u && setTimeout(q.start, 14)
+                }, stop: function () {
+                    c.setAttribute("class", "loading hide_loading");
+                    setTimeout(function () {
+                        u = 0;
+                        c.remove()
+                    }, 550)
+                }
+            }
+        }();
+        q.start()
+    })();
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-73719991-1', 'auto');
+    ga('send', 'pageview');
+
+    (function () {
+        var github_link = document.querySelector('.foot-dev-stuff');
+        if (github_link) {
+            document.body.appendChild(github_link);
+        }
+    }());
+
+</script>
+<div class="center foot-dev-stuff">
+    <a href="https://github.com/UABRO" class="github_link">UABRO on GitHub
+        <svg height="28" version="1.1" viewBox="0 0 16 16" width="28">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+        </svg>
+    </a>
+</div>
+</body>
+</html>
